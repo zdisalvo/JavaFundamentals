@@ -8,7 +8,7 @@ import main.com.adventure.world.objects.keys.Key;
 
 public class Player {
 
-    private String name = "Fred";
+    private String name;
     public int level = 5;
     private int currentLocationIndex = AppSettings.getStartingLocation();
     private Key key;
@@ -23,8 +23,10 @@ public class Player {
      * @param newName - the player's name that will be saved
      */
     public void setName(String newName) {
-        newName = name;
-        System.out.println("Your name is now {" + newName + "}");
+        //Scanner myObj = new (Scanner(System.in));
+        //newName = newName.nextLine();
+        name = newName;
+        System.out.println("Your name is now {" + name + "}");
     }
 
     /**
